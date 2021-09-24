@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# twittes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do Projeto
+ 
+### :rocket: Projeto desenvolvido em React, com Redux e TypeScript no front-end e Firebase e node no backend.
 
-## Available Scripts
+* Aplicação Front-End twittes.
 
-In the project directory, you can run:
+## Começando
 
-### `npm start`
+### :wrench: Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Antes de começar, você precisará ter as seguintes ferramentas instaladas em sua máquina: [Git] ( https://git-scm.com ), [Node.js]  (https://nodejs.org/en/). Além disso, é bom ter um editor para trabalhar com o código como [VSCode] (https://code.visualstudio.com/). Para melhor visibilidade do estato global no Redux, instale Redux devtools no navegador (http://bit.ly/ctt-redux-dev-tools) e no projeto via terminal (npm install redux-devtools-extension).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 🎲 Back-End (API)
 
-### `npm test`
+Acesse Back-End em:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# Clone o repositório
+$ git clone https://github.com/danielfranchi/twittes
 
-### `npm run build`
+# Acessar a pasta do projeto no terminal/cmd
+$ cd twittes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Abra a pasta json
+$ cd json
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Instale o json-server
+$ npm install -g json-server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Execute o aplicativo em modo de desenvolvimento
+$ json-server --watch api.json --port 4000
 
-### `npm run eject`
+# O servidor irá iniciar na porta:4000 - acesse <http://localhost:4000>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+$ http://localhost:4000/posts
+$ http://localhost:4000/stories
+$ http://localhost:4000/user
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### :computer: Executando o Front-End (React)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Clone este repositório
+$ git clone https://github.com/danielfranchi/twittes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Acesse a pasta do projeto no terminal/cmd 
+$ cd twittes
 
-## Learn More
+# Instale as dependências
+$ npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Execute o aplicativo em modo de desenvolvimento
+$ npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# O servidor irá iniciar na porta: 3000 - access <http://localhost:3000>
+```
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [React](https://pt-br.reactjs.org/)
+- [Redux](https://react-redux.js.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/)
+- [Firebase](https://firebase.google.com/?hl=pt-BR)
